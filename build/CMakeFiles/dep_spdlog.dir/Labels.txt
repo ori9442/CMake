@@ -1,0 +1,14 @@
+# Target labels
+ dep_spdlog
+# Source files and their labels
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/dep_spdlog
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/917090b20e3ec540c12cc93e379ac4cf/dep_spdlog.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/e3da904a7beac1045a09c303d8423f77/dep_spdlog-complete.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-build.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-configure.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-download.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-install.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-mkdir.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-patch.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-test.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ed67b6fa97ad2668fdac65a04a2a9580/dep_spdlog-update.rule

@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41CFB6C2-6C88-311F-B66E-73E1117920E0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>dep-spdlog</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\dep-spdlog-gitinfo.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\dep-spdlog-gitinfo.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\dep-spdlog-gitinfo.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/tmp/dep-spdlog-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\dep-spdlog-gitinfo.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/oriss/Documents/GitHub/CMake/build/install "-GVisual Studio 17 2022" -Ax64 -Thost=x64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-cfgcmd.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/oriss/Documents/GitHub/CMake/build/install "-GVisual Studio 17 2022" -Ax64 -Thost=x64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-cfgcmd.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/oriss/Documents/GitHub/CMake/build/install "-GVisual Studio 17 2022" -Ax64 -Thost=x64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-cfgcmd.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/oriss/Documents/GitHub/CMake/build/install "-GVisual Studio 17 2022" -Ax64 -Thost=x64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-cfgcmd.txt;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\f3cefcddf3680f5b5d43091b9e1c4b9c\dep-spdlog-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\e3da904a7beac1045a09c303d8423f77\dep-spdlog-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)/dep-spdlog-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)/dep-spdlog-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)/dep-spdlog-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'dep-spdlog'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/$(Configuration)/dep-spdlog-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-stamp/$(Configuration)/dep-spdlog-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-install;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-mkdir;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-download;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-update;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-patch;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-configure;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-build;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-stamp\$(Configuration)\dep-spdlog-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\917090b20e3ec540c12cc93e379ac4cf\dep-spdlog.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\dep-spdlog</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\dep-spdlog</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\dep-spdlog</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\$(Configuration)\dep-spdlog-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\dep-spdlog</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/oriss/Documents/GitHub/CMake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oriss/Documents/GitHub/CMake -BC:/Users/oriss/Documents/GitHub/CMake/build --check-stamp-file C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\oriss\Documents\GitHub\CMake\Dependency.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeSystem.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/oriss/Documents/GitHub/CMake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oriss/Documents/GitHub/CMake -BC:/Users/oriss/Documents/GitHub/CMake/build --check-stamp-file C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\oriss\Documents\GitHub\CMake\Dependency.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeSystem.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/oriss/Documents/GitHub/CMake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oriss/Documents/GitHub/CMake -BC:/Users/oriss/Documents/GitHub/CMake/build --check-stamp-file C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\oriss\Documents\GitHub\CMake\Dependency.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeSystem.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/oriss/Documents/GitHub/CMake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oriss/Documents/GitHub/CMake -BC:/Users/oriss/Documents/GitHub/CMake/build --check-stamp-file C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\oriss\Documents\GitHub\CMake\Dependency.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\3.23.1\CMakeSystem.cmake;C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\tmp\dep-spdlog-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\oriss\Documents\GitHub\CMake\build\CMakeFiles\dep-spdlog">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\oriss\Documents\GitHub\CMake\build\ZERO_CHECK.vcxproj">
+      <Project>{584CE4BE-4E0A-340F-AD17-49F29E07FCA3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

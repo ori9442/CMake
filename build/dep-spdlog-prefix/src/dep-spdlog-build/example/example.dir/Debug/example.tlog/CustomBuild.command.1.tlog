@@ -1,0 +1,10 @@
+^C:\USERS\ORISS\DOCUMENTS\GITHUB\CMAKE\BUILD\DEP-SPDLOG-PREFIX\SRC\DEP-SPDLOG\EXAMPLE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog -BC:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-build --check-stamp-file C:/Users/oriss/Documents/GitHub/CMake/build/dep-spdlog-prefix/src/dep-spdlog-build/example/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

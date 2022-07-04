@@ -1,3 +1,5 @@
 C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/cmake.dir
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/dep_spdlog.dir
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/dep_glfw.dir
 C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/ZERO_CHECK.dir

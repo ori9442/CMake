@@ -1,0 +1,14 @@
+# Target labels
+ dep_glfw
+# Source files and their labels
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/dep_glfw
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/917090b20e3ec540c12cc93e379ac4cf/dep_glfw.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/e3da904a7beac1045a09c303d8423f77/dep_glfw-complete.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-build.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-configure.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-download.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-install.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-mkdir.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-patch.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-test.rule
+C:/Users/oriss/Documents/GitHub/CMake/build/CMakeFiles/2326ba147c64e5653c0b2fde06572c35/dep_glfw-update.rule

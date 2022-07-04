@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\oriss\Documents\GitHub\CMake\build\dep-spdlog-prefix\src\dep-spdlog-build\CMakeFiles\ee80991e1e8db88347b570a4b1e4f1cd\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E925A0BB-2190-3DBA-A319-2AEA97BA0C0B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
